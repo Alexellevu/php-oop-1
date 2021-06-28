@@ -5,7 +5,9 @@
 => all'interno della classe è definito almeno un metodo
 - vengono istanziati almeno due oggetti ‘Movie’ e stampati a schermo i valori delle relative proprietà -->
 
-<?php 
+<?php
+
+use JetBrains\PhpStorm\Language;
 
 class Movie
 {
@@ -28,7 +30,9 @@ class Movie
 
 
     }
-
+    public function setLanguage(string $language){
+        $this->Language = $language;
+    }
     
 
 
@@ -42,6 +46,9 @@ $movies =[
     new Movie('Trainspotting', 'Lorem ipsum dolor, sit amet consectetur adipisicing.','Danny Boyle',1996,'english','https://pad.mymovies.it/filmclub/2006/08/133/locandina.jpg')
 
 ];
+
+
+
 
 
 ?>
